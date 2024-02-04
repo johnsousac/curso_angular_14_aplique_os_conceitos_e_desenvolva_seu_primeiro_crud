@@ -10,7 +10,7 @@ export class PensamentoComponent implements OnInit {
 
   @Input() // informa que o atributo pensamento vai receber dados do componente pai
   pensamento: Pensamento = {
-    id: 0,
+    id: '',
     conteudo: 'I love Angular',
     autoria: 'Nay',
     modelo: 'modelo3'
