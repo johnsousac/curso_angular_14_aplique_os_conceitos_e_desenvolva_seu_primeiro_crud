@@ -12,10 +12,18 @@ export class PensamentoService {
 
   constructor(private http: HttpClient) { }
 
-  listar(pagina: number): Observable<Pensamento[]> {
+  listar(pagina: number, filtro: string, favoritos: boolean): Observable<Pensamento[]> {
     const itensPorPagina = 6;
     let params = new HttpParams().set("_page", pagina).set("_limit", itensPorPagina);
     // return this.http.get<Pensamento[]>(`${this.API}?_page=${pagina}&_limit=${itensPorPagina}`);
+
+    if(filtro.trim().length > 2) {
+      params = params.set("q", filtro);
+    }
+
+    if(favoritos) {
+      params = params.set("favorito", true);
+    }
 
     // no typescript quando o nome da variavel for o mesmo do nome do atributo
     // podemos omitir o nome do atributo por exemplo:
@@ -40,6 +48,11 @@ export class PensamentoService {
   buscarPorId(id: string): Observable<Pensamento> {
     const url = `${this.API}/${id}`;
     return this.http.get<Pensamento>(url);
+  }
+
+  mudarFavorito(pensamento: Pensamento): Observable<Pensamento> {
+    pensamento.favorito = !pensamento.favorito;
+    return this.editar(pensamento);
   }
 
 }

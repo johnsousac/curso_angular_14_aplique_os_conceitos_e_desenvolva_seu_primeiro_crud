@@ -1,53 +1,67 @@
 {
   "pensamentos": [
     {
-      "id": "2",
-      "conteudo": "Estou aprendendo angular",
-      "auditoria": "John",
-      "modelo": "modelo2"
+      "conteudo": "Tudo me convém, mas nem tudo me é lícito",
+      "autoria": "paulo",
+      "modelo": "modelo2",
+      "id": 1,
+      "favorito": true
     },
     {
-      "id": "3",
-      "conteudo": "Angular eh o melhor!",
-      "auditoria": "Dev",
+      "conteudo": "Antes só do que mal acompanhado",
+      "autoria": "desconhecido",
+      "modelo": "modelo1",
+      "id": 2,
+      "favorito": true
+    },
+    {
+      "conteudo": "Tente mover o mundo, mas comece movendo a si mesmo.",
+      "autoria": "platão",
       "modelo": "modelo3",
-      "autoria": "teste"
+      "id": 3,
+      "favorito": true
     },
     {
-      "id": "6689",
-      "conteudo": "asdf",
-      "autoria": "asdf",
-      "modelo": "modelo2"
+      "conteudo": "Muitos odeiam a tirania apenas para que possam estabelecer a sua.",
+      "autoria": "platão",
+      "modelo": "modelo2",
+      "id": 4,
+      "favorito": false
     },
     {
-      "id": "10d8",
-      "conteudo": "asdfasdf",
-      "autoria": "asdfasdf",
-      "modelo": "modelo3"
+      "conteudo": "Seja um \"Super Homem\"",
+      "autoria": "nietzsche",
+      "modelo": "modelo2",
+      "id": 5,
+      "favorito": true
     },
     {
-      "id": "401b",
-      "conteudo": "ASDFASDF",
-      "autoria": "asasas",
-      "modelo": "modelo1"
+      "conteudo": "Uma questão de perspectiva...",
+      "autoria": "nietzsche",
+      "modelo": "modelo2",
+      "id": 6,
+      "favorito": false
     },
     {
-      "id": "308d",
-      "conteudo": "ASDFASDF",
-      "autoria": "asasdf",
-      "modelo": "modelo1"
+      "conteudo": "Pedra mole, pedra dura tanto bate até que fura!",
+      "autoria": "desconhecido",
+      "modelo": "modelo2",
+      "favorito": true,
+      "id": 7
     },
     {
-      "conteudo": "teste 1",
-      "autoria": "teste 1",
+      "conteudo": "Ser ou não ser, eis a questão!",
+      "autoria": "shakespare",
       "modelo": "modelo1",
-      "id": "PqeFMyZ"
+      "favorito": false,
+      "id": 8
     },
     {
-      "conteudo": "teste 2",
-      "autoria": "teste 2",
-      "modelo": "modelo1",
-      "id": "QZ0DDpp"
+      "conteudo": "Penso logo existo",
+      "autoria": "rene descartes",
+      "modelo": "modelo3",
+      "favorito": true,
+      "id": 9
     }
   ]
 }
